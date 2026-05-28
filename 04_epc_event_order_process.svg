@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1800" viewBox="0 0 1600 1800">
+  <defs>
+    <pattern id="grid" width="18" height="18" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.2" fill="#9aa7c7" opacity="0.62"/>
+    </pattern>
+    <linearGradient id="greenGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#b8ff4b"/>
+      <stop offset="48%" stop-color="#63dd08"/>
+      <stop offset="100%" stop-color="#2e9d02"/>
+    </linearGradient>
+    <linearGradient id="orangeGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffd66a"/>
+      <stop offset="55%" stop-color="#ffb018"/>
+      <stop offset="100%" stop-color="#d27b00"/>
+    </linearGradient>
+    <linearGradient id="cyanGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#68eff2"/>
+      <stop offset="100%" stop-color="#18a9b7"/>
+    </linearGradient>
+    <linearGradient id="grayGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#eef7f5"/>
+      <stop offset="100%" stop-color="#aebfbc"/>
+    </linearGradient>
+    <marker id="arrow" markerWidth="11" markerHeight="11" refX="10" refY="3.5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L11,3.5 L0,7 Z" fill="#444"/>
+    </marker>
+    <style>
+      .page { fill: #fff; }
+      .title { font: 700 30px Arial, sans-serif; fill: #222; text-anchor: middle; }
+      .subtitle { font: 400 16px Arial, sans-serif; fill: #555; text-anchor: middle; }
+      .label { font: 700 15px Arial, sans-serif; fill: #111; text-anchor: middle; dominant-baseline: middle; }
+      .small { font: 700 12px Arial, sans-serif; fill: #111; text-anchor: middle; dominant-baseline: middle; }
+      .tiny { font: 700 10.5px Arial, sans-serif; fill: #111; text-anchor: middle; dominant-baseline: middle; }
+      .line { stroke: #454545; stroke-width: 2.6; fill: none; marker-end: url(#arrow); }
+      .linePlain { stroke: #454545; stroke-width: 2.6; fill: none; }
+      .dash { stroke: #555; stroke-width: 2.2; fill: none; stroke-dasharray: 7 6; }
+      .func { fill: url(#greenGrad); stroke: #42a90e; stroke-width: 2.8; filter: drop-shadow(3px 4px 2px rgb(0 0 0 / 0.23)); }
+      .event { fill: url(#orangeGrad); stroke: #c57900; stroke-width: 2.8; filter: drop-shadow(3px 4px 2px rgb(0 0 0 / 0.23)); }
+      .org { fill: url(#cyanGrad); stroke: #087d89; stroke-width: 2.6; rx: 7; ry: 7; filter: drop-shadow(3px 4px 2px rgb(0 0 0 / 0.21)); }
+      .role { fill: #ffe56c; stroke: #c19b00; stroke-width: 2.4; rx: 7; ry: 7; filter: drop-shadow(3px 4px 2px rgb(0 0 0 / 0.18)); }
+      .data { fill: url(#cyanGrad); stroke: #087d89; stroke-width: 2.6; rx: 7; ry: 7; filter: drop-shadow(3px 4px 2px rgb(0 0 0 / 0.21)); }
+      .attr { fill: url(#grayGrad); stroke: #89a29d; stroke-width: 2; rx: 5; ry: 5; filter: drop-shadow(2px 3px 2px rgb(0 0 0 / 0.18)); }
+      .xor { fill: #f6f6f6; stroke: #444; stroke-width: 2.8; }
+      .legend { fill: #f8f8f8; stroke: #b8b8b8; stroke-width: 1.4; rx: 8; }
+    </style>
+  </defs>
+  <rect class="page" width="1600" height="1800"/>
+  <rect width="1600" height="1800" fill="url(#grid)"/>
+  <text class="title" x="800" y="42">EPC «Обработка заказа на мероприятие»</text>
+  <text class="subtitle" x="800" y="68">EPC: основной процесс выполнения заказа мероприятия</text><polygon class="event" points="647,95 953,95 975,130 953,165 647,165 625,130"/>
+<text class="small" x="800" y="130"><tspan x="800" dy="0">Поступил запрос от клиента</tspan></text><path class="line" d="M800 165 L800 200"/><rect class="func" x="620" y="200" width="360" height="62"/>
+<text class="small" x="800" y="222"><tspan x="800" dy="0">Принять заявку и</tspan><tspan x="800" dy="18">зафиксировать в CRM</tspan></text><rect class="role" x="385" y="204" width="175" height="54"/>
+<text class="small" x="472.5" y="222"><tspan x="472.5" dy="0">Менеджер по</tspan><tspan x="472.5" dy="18">клиентам</tspan></text><rect class="data" x="1040" y="204" width="175" height="54"/>
+<text class="small" x="1127.5" y="231"><tspan x="1127.5" dy="0">CRM</tspan></text><path class="linePlain" d="M560 231 L620 231"/><path class="linePlain" d="M980 231 L1040 231"/><path class="line" d="M800 262 L800 298"/><polygon class="event" points="647,298 953,298 975,333 953,368 647,368 625,333"/>
+<text class="small" x="800" y="333"><tspan x="800" dy="0">Заявка зарегистрирована</tspan></text><path class="line" d="M800 368 L800 403"/><rect class="func" x="620" y="403" width="360" height="62"/>
+<text class="small" x="800" y="434"><tspan x="800" dy="0">Назначить event-менеджера</tspan></text><path class="line" d="M800 465 L800 501"/><rect class="func" x="620" y="501" width="360" height="62"/>
+<text class="small" x="800" y="523"><tspan x="800" dy="0">Выявить требования, бюджет и</tspan><tspan x="800" dy="18">сроки</tspan></text><path class="line" d="M800 563 L800 599"/><polygon class="event" points="647,599 953,599 975,634 953,669 647,669 625,634"/>
+<text class="small" x="800" y="625"><tspan x="800" dy="0">Требования клиента</tspan><tspan x="800" dy="18">определены</tspan></text><path class="line" d="M800 669 L800 704"/><rect class="func" x="620" y="704" width="360" height="62"/>
+<text class="small" x="800" y="726"><tspan x="800" dy="0">Подготовить концепцию и</tspan><tspan x="800" dy="18">смету</tspan></text><rect class="role" x="360" y="708" width="200" height="54"/>
+<text class="small" x="460" y="726"><tspan x="460" dy="0">Креативный</tspan><tspan x="460" dy="18">продюсер</tspan></text><rect class="data" x="1040" y="708" width="190" height="54"/>
+<text class="small" x="1135" y="735"><tspan x="1135" dy="0">Шаблон сметы</tspan></text><path class="linePlain" d="M560 735 L620 735"/><path class="linePlain" d="M980 735 L1040 735"/><path class="line" d="M800 766 L800 802"/><polygon class="event" points="647,802 953,802 975,837 953,872 647,872 625,837"/>
+<text class="small" x="800" y="828"><tspan x="800" dy="0">Коммерческое предложение</tspan><tspan x="800" dy="18">готово</tspan></text><path class="line" d="M800 872 L800 907"/><rect class="func" x="620" y="907" width="360" height="62"/>
+<text class="small" x="800" y="929"><tspan x="800" dy="0">Согласовать предложение с</tspan><tspan x="800" dy="18">клиентом</tspan></text><path class="line" d="M800 969 L800 993"/><polygon class="xor" points="800,993 845,1038 800,1083 755,1038"/>
+<text class="label" x="800" y="1040">XOR</text>
+<text class="tiny" x="728" y="1030">нет</text>
+<text class="tiny" x="878" y="1030">да</text><path class="line" d="M755 1038 L515 1038 L515 826 L620 826"/><rect class="func" x="280" y="794" width="300" height="62"/>
+<text class="small" x="430" y="825"><tspan x="430" dy="0">Доработать предложение</tspan></text><path class="line" d="M430 794 L430 735 L620 735"/><path class="linePlain" d="M845 1038 L980 1038 L980 970 L980 970"/><path class="line" d="M980 1038 L980 970"/><rect class="func" x="905" y="970" width="150" height="66"/>
+<text class="small" x="980" y="1003"><tspan x="980" dy="0">Заключить договор</tspan></text><rect class="role" x="1165" y="976" width="170" height="54"/>
+<text class="small" x="1250" y="1003"><tspan x="1250" dy="0">Юрист / бухгалтер</tspan></text><path class="linePlain" d="M1055 1003 L1165 1003"/><path class="line" d="M980 1036 L980 1070"/><polygon class="event" points="912,1070 1048,1070 1070,1106 1048,1142 912,1142 890,1106"/>
+<text class="small" x="980" y="1106"><tspan x="980" dy="0">Договор подписан</tspan></text><path class="line" d="M980 1142 L980 1175"/><rect class="func" x="905" y="1175" width="150" height="66"/>
+<text class="small" x="980" y="1199"><tspan x="980" dy="0">Сформировать</tspan><tspan x="980" dy="18">проектную команду</tspan></text><path class="line" d="M980 1241 L980 1275"/><rect class="func" x="905" y="1275" width="150" height="66"/>
+<text class="small" x="980" y="1290"><tspan x="980" dy="0">Закупить ресурсы и</tspan><tspan x="980" dy="18">согласовать</tspan><tspan x="980" dy="18">подрядчиков</tspan></text><rect class="org" x="1165" y="1281" width="170" height="54"/>
+<text class="small" x="1250" y="1308"><tspan x="1250" dy="0">Подрядчики</tspan></text><path class="linePlain" d="M1055 1308 L1165 1308"/><path class="line" d="M980 1341 L980 1375"/><rect class="func" x="905" y="1375" width="150" height="66"/>
+<text class="small" x="980" y="1399"><tspan x="980" dy="0">Провести</tspan><tspan x="980" dy="18">мероприятие</tspan></text><path class="line" d="M980 1441 L980 1478"/><polygon class="event" points="912,1478 1048,1478 1070,1514 1048,1550 912,1550 890,1514"/>
+<text class="small" x="980" y="1505"><tspan x="980" dy="0">Мероприятие</tspan><tspan x="980" dy="18">проведено</tspan></text><path class="line" d="M980 1550 L980 1582"/><rect class="func" x="905" y="1582" width="150" height="66"/>
+<text class="small" x="980" y="1597"><tspan x="980" dy="0">Подготовить отчет</tspan><tspan x="980" dy="18">и закрывающие</tspan><tspan x="980" dy="18">документы</tspan></text><path class="line" d="M980 1648 L980 1685"/><polygon class="event" points="912,1685 1048,1685 1070,1721 1048,1757 912,1757 890,1721"/>
+<text class="small" x="980" y="1721"><tspan x="980" dy="0">Проект закрыт</tspan></text><rect class="legend" x="70" y="1680" width="630" height="70"/>
+<polygon class="event" points="117,1696 183,1696 205,1713 183,1730 117,1730 95,1713"/>
+<text class="small" x="150" y="1713"><tspan x="150" dy="0">Event</tspan></text>
+<rect class="func" x="260" y="1696" width="110" height="34"/>
+<text class="tiny" x="315" y="1713"><tspan x="315" dy="0">Function</tspan></text>
+<rect class="role" x="425" y="1696" width="110" height="34"/>
+<text class="tiny" x="480" y="1713"><tspan x="480" dy="0">Role</tspan></text>
+<rect class="data" x="585" y="1696" width="110" height="34"/>
+<text class="tiny" x="640" y="1713"><tspan x="640" dy="0">Data</tspan></text>
+</svg>

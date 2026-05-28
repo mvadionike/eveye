@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="960" viewBox="0 0 1400 960">
+  <defs>
+    <pattern id="grid" width="18" height="18" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.2" fill="#9aa7c7" opacity="0.62"/>
+    </pattern>
+    <linearGradient id="greenGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#b8ff4b"/>
+      <stop offset="48%" stop-color="#63dd08"/>
+      <stop offset="100%" stop-color="#2e9d02"/>
+    </linearGradient>
+    <linearGradient id="orangeGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffd66a"/>
+      <stop offset="55%" stop-color="#ffb018"/>
+      <stop offset="100%" stop-color="#d27b00"/>
+    </linearGradient>
+    <linearGradient id="cyanGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#68eff2"/>
+      <stop offset="100%" stop-color="#18a9b7"/>
+    </linearGradient>
+    <linearGradient id="grayGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#eef7f5"/>
+      <stop offset="100%" stop-color="#aebfbc"/>
+    </linearGradient>
+    <marker id="arrow" markerWidth="11" markerHeight="11" refX="10" refY="3.5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L11,3.5 L0,7 Z" fill="#444"/>
+    </marker>
+    <style>
+      .page { fill: #fff; }
+      .title { font: 700 30px Arial, sans-serif; fill: #222; text-anchor: middle; }
+      .subtitle { font: 400 16px Arial, sans-serif; fill: #555; text-anchor: middle; }
+      .label { font: 700 15px Arial, sans-serif; fill: #111; text-anchor: middle; dominant-baseline: middle; }
+      .small { font: 700 12px Arial, sans-serif; fill: #111; text-anchor: middle; dominant-baseline: middle; }
+      .tiny { font: 700 10.5px Arial, sans-serif; fill: #111; text-anchor: middle; dominant-baseline: middle; }
+      .line { stroke: #454545; stroke-width: 2.6; fill: none; marker-end: url(#arrow); }
+      .linePlain { stroke: #454545; stroke-width: 2.6; fill: none; }
+      .dash { stroke: #555; stroke-width: 2.2; fill: none; stroke-dasharray: 7 6; }
+      .func { fill: url(#greenGrad); stroke: #42a90e; stroke-width: 2.8; filter: drop-shadow(3px 4px 2px rgb(0 0 0 / 0.23)); }
+      .event { fill: url(#orangeGrad); stroke: #c57900; stroke-width: 2.8; filter: drop-shadow(3px 4px 2px rgb(0 0 0 / 0.23)); }
+      .org { fill: url(#cyanGrad); stroke: #087d89; stroke-width: 2.6; rx: 7; ry: 7; filter: drop-shadow(3px 4px 2px rgb(0 0 0 / 0.21)); }
+      .role { fill: #ffe56c; stroke: #c19b00; stroke-width: 2.4; rx: 7; ry: 7; filter: drop-shadow(3px 4px 2px rgb(0 0 0 / 0.18)); }
+      .data { fill: url(#cyanGrad); stroke: #087d89; stroke-width: 2.6; rx: 7; ry: 7; filter: drop-shadow(3px 4px 2px rgb(0 0 0 / 0.21)); }
+      .attr { fill: url(#grayGrad); stroke: #89a29d; stroke-width: 2; rx: 5; ry: 5; filter: drop-shadow(2px 3px 2px rgb(0 0 0 / 0.18)); }
+      .xor { fill: #f6f6f6; stroke: #444; stroke-width: 2.8; }
+      .legend { fill: #f8f8f8; stroke: #b8b8b8; stroke-width: 1.4; rx: 8; }
+    </style>
+  </defs>
+  <rect class="page" width="1400" height="960"/>
+  <rect width="1400" height="960" fill="url(#grid)"/>
+  <text class="title" x="700" y="42">Организационная модель event-агентства</text>
+  <text class="subtitle" x="700" y="68">Organizational Chart: организационная структура event-агентства</text><rect class="org" x="570" y="95" width="260" height="62"/>
+<text class="small" x="700" y="126"><tspan x="700" dy="0">Генеральный директор</tspan></text><path class="linePlain" d="M700 157 L700 205"/><path class="linePlain" d="M170 205 L1130 205"/><path class="linePlain" d="M195 205 L195 245"/><rect class="org" x="80" y="245" width="230" height="58"/>
+<text class="small" x="195" y="274"><tspan x="195" dy="0">Коммерческий отдел</tspan></text><path class="linePlain" d="M430 205 L430 245"/><rect class="org" x="315" y="245" width="230" height="58"/>
+<text class="small" x="430" y="274"><tspan x="430" dy="0">Проектный отдел</tspan></text><path class="linePlain" d="M665 205 L665 245"/><rect class="org" x="550" y="245" width="230" height="58"/>
+<text class="small" x="665" y="274"><tspan x="665" dy="0">Операционный отдел</tspan></text><path class="linePlain" d="M900 205 L900 245"/><rect class="org" x="785" y="245" width="230" height="58"/>
+<text class="small" x="900" y="265"><tspan x="900" dy="0">Финансово-юридический</tspan><tspan x="900" dy="18">отдел</tspan></text><path class="linePlain" d="M1135 205 L1135 245"/><rect class="org" x="1020" y="245" width="230" height="58"/>
+<text class="small" x="1135" y="274"><tspan x="1135" dy="0">Маркетинг и PR</tspan></text><path class="linePlain" d="M195 303 L195 340"/><rect class="role" x="102" y="340" width="186" height="54"/>
+<text class="small" x="195" y="358"><tspan x="195" dy="0">Руководитель</tspan><tspan x="195" dy="18">продаж</tspan></text><path class="linePlain" d="M195 383 L195 420"/><rect class="role" x="102" y="420" width="186" height="54"/>
+<text class="small" x="195" y="438"><tspan x="195" dy="0">Менеджер по</tspan><tspan x="195" dy="18">клиентам</tspan></text><path class="linePlain" d="M195 463 L195 500"/><rect class="role" x="102" y="500" width="186" height="54"/>
+<text class="small" x="195" y="527"><tspan x="195" dy="0">CRM-специалист</tspan></text><path class="linePlain" d="M430 303 L430 340"/><rect class="role" x="337" y="340" width="186" height="54"/>
+<text class="small" x="430" y="358"><tspan x="430" dy="0">Руководитель</tspan><tspan x="430" dy="18">проектов</tspan></text><path class="linePlain" d="M430 383 L430 420"/><rect class="role" x="337" y="420" width="186" height="54"/>
+<text class="small" x="430" y="447"><tspan x="430" dy="0">Event-менеджер</tspan></text><path class="linePlain" d="M430 463 L430 500"/><rect class="role" x="337" y="500" width="186" height="54"/>
+<text class="small" x="430" y="518"><tspan x="430" dy="0">Креативный</tspan><tspan x="430" dy="18">продюсер</tspan></text><path class="linePlain" d="M430 543 L430 580"/><rect class="role" x="337" y="580" width="186" height="54"/>
+<text class="small" x="430" y="607"><tspan x="430" dy="0">Сценарист</tspan></text><path class="linePlain" d="M430 623 L430 660"/><rect class="role" x="337" y="660" width="186" height="54"/>
+<text class="small" x="430" y="687"><tspan x="430" dy="0">Дизайнер</tspan></text><path class="linePlain" d="M665 303 L665 340"/><rect class="role" x="572" y="340" width="186" height="54"/>
+<text class="small" x="665" y="358"><tspan x="665" dy="0">Технический</tspan><tspan x="665" dy="18">продюсер</tspan></text><path class="linePlain" d="M665 383 L665 420"/><rect class="role" x="572" y="420" width="186" height="54"/>
+<text class="small" x="665" y="438"><tspan x="665" dy="0">Координатор</tspan><tspan x="665" dy="18">площадки</tspan></text><path class="linePlain" d="M665 463 L665 500"/><rect class="role" x="572" y="500" width="186" height="54"/>
+<text class="small" x="665" y="527"><tspan x="665" dy="0">Логист</tspan></text><path class="linePlain" d="M665 543 L665 580"/><rect class="role" x="572" y="580" width="186" height="54"/>
+<text class="small" x="665" y="598"><tspan x="665" dy="0">Менеджер</tspan><tspan x="665" dy="18">подрядчиков</tspan></text><path class="linePlain" d="M900 303 L900 340"/><rect class="role" x="807" y="340" width="186" height="54"/>
+<text class="small" x="900" y="358"><tspan x="900" dy="0">Финансовый</tspan><tspan x="900" dy="18">менеджер</tspan></text><path class="linePlain" d="M900 383 L900 420"/><rect class="role" x="807" y="420" width="186" height="54"/>
+<text class="small" x="900" y="447"><tspan x="900" dy="0">Бухгалтер</tspan></text><path class="linePlain" d="M900 463 L900 500"/><rect class="role" x="807" y="500" width="186" height="54"/>
+<text class="small" x="900" y="527"><tspan x="900" dy="0">Юрист</tspan></text><path class="linePlain" d="M1135 303 L1135 340"/><rect class="role" x="1042" y="340" width="186" height="54"/>
+<text class="small" x="1135" y="367"><tspan x="1135" dy="0">SMM-специалист</tspan></text><path class="linePlain" d="M1135 383 L1135 420"/><rect class="role" x="1042" y="420" width="186" height="54"/>
+<text class="small" x="1135" y="447"><tspan x="1135" dy="0">PR-менеджер</tspan></text><path class="linePlain" d="M1135 463 L1135 500"/><rect class="role" x="1042" y="500" width="186" height="54"/>
+<text class="small" x="1135" y="527"><tspan x="1135" dy="0">Контент-менеджер</tspan></text><rect class="org" x="550" y="690" width="230" height="58"/>
+<text class="small" x="665" y="719"><tspan x="665" dy="0">Внешние подрядчики</tspan></text><path class="linePlain" d="M665 634 L665 690"/><path class="linePlain" d="M665 748 L455 805"/><rect class="role" x="395" y="805" width="120" height="48"/>
+<text class="small" x="455" y="829"><tspan x="455" dy="0">Кейтеринг</tspan></text><path class="linePlain" d="M665 748 L595 805"/><rect class="role" x="535" y="805" width="120" height="48"/>
+<text class="small" x="595" y="829"><tspan x="595" dy="0">Оборудование</tspan></text><path class="linePlain" d="M665 748 L735 805"/><rect class="role" x="675" y="805" width="120" height="48"/>
+<text class="small" x="735" y="829"><tspan x="735" dy="0">Артисты</tspan></text><path class="linePlain" d="M665 748 L875 805"/><rect class="role" x="815" y="805" width="120" height="48"/>
+<text class="small" x="875" y="829"><tspan x="875" dy="0">Декор</tspan></text><path class="linePlain" d="M665 748 L1015 805"/><rect class="role" x="955" y="805" width="120" height="48"/>
+<text class="small" x="1015" y="829"><tspan x="1015" dy="0">Фото / видео</tspan></text><rect class="legend" x="40" y="875" width="520" height="60"/>
+<rect class="org" x="62" y="890" width="70" height="28"/>
+<text class="tiny" x="97" y="904"><tspan x="97" dy="0">Org Unit</tspan></text>
+<rect class="role" x="252" y="890" width="70" height="28"/>
+<text class="tiny" x="287" y="904"><tspan x="287" dy="0">Position</tspan></text>
+<text class="small" x="405" y="904">ARIS: Organizational Chart</text>
+</svg>

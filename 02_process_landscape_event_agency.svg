@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="820" viewBox="0 0 1600 820">
+  <defs>
+    <pattern id="grid" width="18" height="18" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.2" fill="#9aa7c7" opacity="0.62"/>
+    </pattern>
+    <linearGradient id="greenGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#b8ff4b"/>
+      <stop offset="48%" stop-color="#63dd08"/>
+      <stop offset="100%" stop-color="#2e9d02"/>
+    </linearGradient>
+    <linearGradient id="orangeGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffd66a"/>
+      <stop offset="55%" stop-color="#ffb018"/>
+      <stop offset="100%" stop-color="#d27b00"/>
+    </linearGradient>
+    <linearGradient id="cyanGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#68eff2"/>
+      <stop offset="100%" stop-color="#18a9b7"/>
+    </linearGradient>
+    <linearGradient id="grayGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#eef7f5"/>
+      <stop offset="100%" stop-color="#aebfbc"/>
+    </linearGradient>
+    <marker id="arrow" markerWidth="11" markerHeight="11" refX="10" refY="3.5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L11,3.5 L0,7 Z" fill="#444"/>
+    </marker>
+    <style>
+      .page { fill: #fff; }
+      .title { font: 700 30px Arial, sans-serif; fill: #222; text-anchor: middle; }
+      .subtitle { font: 400 16px Arial, sans-serif; fill: #555; text-anchor: middle; }
+      .label { font: 700 15px Arial, sans-serif; fill: #111; text-anchor: middle; dominant-baseline: middle; }
+      .small { font: 700 12px Arial, sans-serif; fill: #111; text-anchor: middle; dominant-baseline: middle; }
+      .tiny { font: 700 10.5px Arial, sans-serif; fill: #111; text-anchor: middle; dominant-baseline: middle; }
+      .line { stroke: #454545; stroke-width: 2.6; fill: none; marker-end: url(#arrow); }
+      .linePlain { stroke: #454545; stroke-width: 2.6; fill: none; }
+      .dash { stroke: #555; stroke-width: 2.2; fill: none; stroke-dasharray: 7 6; }
+      .func { fill: url(#greenGrad); stroke: #42a90e; stroke-width: 2.8; filter: drop-shadow(3px 4px 2px rgb(0 0 0 / 0.23)); }
+      .event { fill: url(#orangeGrad); stroke: #c57900; stroke-width: 2.8; filter: drop-shadow(3px 4px 2px rgb(0 0 0 / 0.23)); }
+      .org { fill: url(#cyanGrad); stroke: #087d89; stroke-width: 2.6; rx: 7; ry: 7; filter: drop-shadow(3px 4px 2px rgb(0 0 0 / 0.21)); }
+      .role { fill: #ffe56c; stroke: #c19b00; stroke-width: 2.4; rx: 7; ry: 7; filter: drop-shadow(3px 4px 2px rgb(0 0 0 / 0.18)); }
+      .data { fill: url(#cyanGrad); stroke: #087d89; stroke-width: 2.6; rx: 7; ry: 7; filter: drop-shadow(3px 4px 2px rgb(0 0 0 / 0.21)); }
+      .attr { fill: url(#grayGrad); stroke: #89a29d; stroke-width: 2; rx: 5; ry: 5; filter: drop-shadow(2px 3px 2px rgb(0 0 0 / 0.18)); }
+      .xor { fill: #f6f6f6; stroke: #444; stroke-width: 2.8; }
+      .legend { fill: #f8f8f8; stroke: #b8b8b8; stroke-width: 1.4; rx: 8; }
+    </style>
+  </defs>
+  <rect class="page" width="1600" height="820"/>
+  <rect width="1600" height="820" fill="url(#grid)"/>
+  <text class="title" x="800" y="42">Бизнес-модель процессов event-агентства</text>
+  <text class="subtitle" x="800" y="68">Process Landscape / VACD: верхнеуровневые бизнес-процессы</text><polygon class="func" points="555,95 1027,95 1045,131 1027,167 555,167 573,131"/>
+<text class="tiny" x="804" y="124"><tspan x="804" dy="0">Работа с клиентом и организация</tspan><tspan x="804" dy="14">мероприятия</tspan></text><path class="linePlain" d="M800 167 L800 220"/><path class="linePlain" d="M120 220 L1480 220"/><path class="linePlain" d="M165 220 L165 275"/><polygon class="func" points="60,275 252,275 270,304 252,333 60,333 78,304"/>
+<text class="tiny" x="169" y="304"><tspan x="169" dy="0">Продажи и CRM</tspan></text><path class="linePlain" d="M370 220 L370 275"/><polygon class="func" points="265,275 457,275 475,304 457,333 265,333 283,304"/>
+<text class="tiny" x="374" y="297"><tspan x="374" dy="0">Предпроектная</tspan><tspan x="374" dy="14">подготовка</tspan></text><path class="linePlain" d="M625 220 L625 275"/><polygon class="func" points="520,275 712,275 730,304 712,333 520,333 538,304"/>
+<text class="tiny" x="629" y="304"><tspan x="629" dy="0">Договор и финансы</tspan></text><path class="linePlain" d="M860 220 L860 275"/><polygon class="func" points="755,275 947,275 965,304 947,333 755,333 773,304"/>
+<text class="tiny" x="864" y="297"><tspan x="864" dy="0">Планирование</tspan><tspan x="864" dy="14">проекта</tspan></text><path class="linePlain" d="M1105 220 L1105 275"/><polygon class="func" points="1000,275 1192,275 1210,304 1192,333 1000,333 1018,304"/>
+<text class="tiny" x="1109" y="304"><tspan x="1109" dy="0">Подготовка ресурсов</tspan></text><path class="linePlain" d="M1345 220 L1345 275"/><polygon class="func" points="1240,275 1432,275 1450,304 1432,333 1240,333 1258,304"/>
+<text class="tiny" x="1349" y="297"><tspan x="1349" dy="0">Проведение и</tspan><tspan x="1349" dy="14">закрытие</tspan></text><path class="linePlain" d="M165 333 L165 380"/><polygon class="func" points="80,380 232,380 250,407 232,434 80,434 98,407"/>
+<text class="tiny" x="169" y="400"><tspan x="169" dy="0">Регистрация</tspan><tspan x="169" dy="14">заявки</tspan></text><path class="linePlain" d="M165 438 L165 475"/><polygon class="func" points="80,475 232,475 250,502 232,529 80,529 98,502"/>
+<text class="tiny" x="169" y="502"><tspan x="169" dy="0">Квалификация лида</tspan></text><path class="linePlain" d="M165 533 L165 570"/><polygon class="func" points="80,570 232,570 250,597 232,624 80,624 98,597"/>
+<text class="tiny" x="169" y="590"><tspan x="169" dy="0">Назначение</tspan><tspan x="169" dy="14">менеджера</tspan></text><path class="linePlain" d="M370 333 L370 380"/><polygon class="func" points="285,380 437,380 455,407 437,434 285,434 303,407"/>
+<text class="tiny" x="374" y="400"><tspan x="374" dy="0">Анализ</tspan><tspan x="374" dy="14">потребностей</tspan></text><path class="linePlain" d="M370 438 L370 475"/><polygon class="func" points="285,475 437,475 455,502 437,529 285,529 303,502"/>
+<text class="tiny" x="374" y="495"><tspan x="374" dy="0">Концепция и</tspan><tspan x="374" dy="14">сценарий</tspan></text><path class="linePlain" d="M370 533 L370 570"/><polygon class="func" points="285,570 437,570 455,597 437,624 285,624 303,597"/>
+<text class="tiny" x="374" y="590"><tspan x="374" dy="0">Коммерческое</tspan><tspan x="374" dy="14">предложение</tspan></text><path class="linePlain" d="M625 333 L625 380"/><polygon class="func" points="540,380 692,380 710,407 692,434 540,434 558,407"/>
+<text class="tiny" x="629" y="407"><tspan x="629" dy="0">Расчет сметы</tspan></text><path class="linePlain" d="M625 438 L625 475"/><polygon class="func" points="540,475 692,475 710,502 692,529 540,529 558,502"/>
+<text class="tiny" x="629" y="495"><tspan x="629" dy="0">Согласование</tspan><tspan x="629" dy="14">условий</tspan></text><path class="linePlain" d="M625 533 L625 570"/><polygon class="func" points="540,570 692,570 710,597 692,624 540,624 558,597"/>
+<text class="tiny" x="629" y="590"><tspan x="629" dy="0">Заключение</tspan><tspan x="629" dy="14">договора</tspan></text><path class="linePlain" d="M860 333 L860 380"/><polygon class="func" points="775,380 927,380 945,407 927,434 775,434 793,407"/>
+<text class="tiny" x="864" y="407"><tspan x="864" dy="0">План-график</tspan></text><path class="linePlain" d="M860 438 L860 475"/><polygon class="func" points="775,475 927,475 945,502 927,529 775,529 793,502"/>
+<text class="tiny" x="864" y="495"><tspan x="864" dy="0">Распределение</tspan><tspan x="864" dy="14">задач</tspan></text><path class="linePlain" d="M860 533 L860 570"/><polygon class="func" points="775,570 927,570 945,597 927,624 775,624 793,597"/>
+<text class="tiny" x="864" y="597"><tspan x="864" dy="0">Контроль сроков</tspan></text><path class="linePlain" d="M1105 333 L1105 380"/><polygon class="func" points="1020,380 1172,380 1190,407 1172,434 1020,434 1038,407"/>
+<text class="tiny" x="1109" y="407"><tspan x="1109" dy="0">Подбор площадки</tspan></text><path class="linePlain" d="M1105 438 L1105 475"/><polygon class="func" points="1020,475 1172,475 1190,502 1172,529 1020,529 1038,502"/>
+<text class="tiny" x="1109" y="502"><tspan x="1109" dy="0">Закупка / аренда</tspan></text><path class="linePlain" d="M1105 533 L1105 570"/><polygon class="func" points="1020,570 1172,570 1190,597 1172,624 1020,624 1038,597"/>
+<text class="tiny" x="1109" y="590"><tspan x="1109" dy="0">Логистика и</tspan><tspan x="1109" dy="14">монтаж</tspan></text><path class="linePlain" d="M1345 333 L1345 380"/><polygon class="func" points="1260,380 1412,380 1430,407 1412,434 1260,434 1278,407"/>
+<text class="tiny" x="1349" y="400"><tspan x="1349" dy="0">Реализация</tspan><tspan x="1349" dy="14">сценария</tspan></text><path class="linePlain" d="M1345 438 L1345 475"/><polygon class="func" points="1260,475 1412,475 1430,502 1412,529 1260,529 1278,502"/>
+<text class="tiny" x="1349" y="502"><tspan x="1349" dy="0">Отчетность</tspan></text><path class="linePlain" d="M1345 533 L1345 570"/><polygon class="func" points="1260,570 1412,570 1430,597 1412,624 1260,624 1278,597"/>
+<text class="tiny" x="1349" y="597"><tspan x="1349" dy="0">Повторные продажи</tspan></text><rect class="legend" x="50" y="710" width="560" height="66"/>
+<polygon class="func" points="70,726 162,726 180,743 162,760 70,760 88,743"/>
+<text class="tiny" x="129" y="743"><tspan x="129" dy="0">Process</tspan></text>
+<text class="small" x="390" y="743">ARIS: Process Landscape / Value-added Chain</text>
+</svg>
